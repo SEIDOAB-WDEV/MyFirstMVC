@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Martins Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Martin Page</h1>
+    <p>Eating cookies, and saying: @Model.Greetings</p>
+
+    <p>
+
+        <div class="row mb-2 text-center">
+            <div class="col-md-12 themed-grid-head-col">Latin sentences</div>
+        </div>
+        @foreach (var item in Model.Latin)
+        {
+            <div class="row mb-2 text-center">
+                <div class="col-md-12 themed-grid-col">@item.Sentence</div>
+            </div>
+        }
+    </p>
+</div>
+
+<div class="row g-1 d-none">
+    <h3 class="pb-2">Latin</h3>
+
+    <div class="row mb-2 text-center">
+        <div class="col-md-12 themed-grid-head-col">Name</div>
+    </div>
+    <div class="row mb-2 text-center">
+        <div class="col-md-12 themed-grid-col">Angus Young</div>
+    </div>
+</div>
